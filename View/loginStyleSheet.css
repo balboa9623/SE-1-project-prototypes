@@ -1,0 +1,80 @@
+/*https://www.youtube.com/watch?v=HV7DtH3J2PU*/
+
+body{
+    background: #036ffc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+#nav_font{
+    font-family: 'Jomolhari', serif;
+    font-size: 20px;
+}
+
+.loginForm {
+    padding-top:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    position: center;
+    text-align: center;
+    background: #191919;
+    border-radius: 20px;
+}
+.loginForm input[type="email"],.loginForm input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition:0.25s;
+}
+
+.loginForm input[type="email"]:focus,.loginForm input[type="password"]:focus {
+    width: 320px;
+    border-color: #2ecc71;
+}
+
+.btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition:0.25s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #2ecc71;
+}
+
+.link{
+    font-size: 20px;
+}
+.textLinks{
+    color: #ff4500;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text{
+    color: white;
+}
+
+#loginPage_logo{
+    padding-top: 100px;
+}
