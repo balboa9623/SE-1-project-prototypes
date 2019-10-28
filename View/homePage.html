@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Home - UCO Handicapped Parking System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="homeStyleSheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif"/>
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background: #036ffc;
-            font-family: 'Patrick Hand', cursive;
-            font-size: 25px;
-        }
-        .dropdown{
-            margin-left: 80px;
-            margin-right: 80px;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-top: 5px;
-            padding-bottom: 7px;
-            border-radius: 7px;
-        }
-    </style>
+
 
 </head>
 <body>
 <p>nothing here yet!!!</p>
 
 <div class="container-fluid">
-    <div class="dropdown">
-        <button class="btn btn-outline-success bg-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select one...
-        </button>
-        <div class="dropdown-menu bg-info">
-            <button class="dropdown-item" href="#">Occupy</button>
-            <button class="dropdown-item" href="#">Leave</button>
-        </div>
-    </div>
+<!--    jumbotron for holding all the buttons-->
+    <div class="jumbotron bg-transparent">
+<!--    centering all the buttons inside the jumbotron-->
+        <div class="text-center">
+
+                <button type="button" class="btn btn-outline-success btn-success bg-dark" id="reserveBtn">Reserve</button>
+                <button type="button" class="btn btn-outline-success btn-success bg-dark" id="cancelBtn">Cancel
+                    Reservation
+                </button>
+                <button type="button" class="btn btn-outline-success btn-success bg-dark" id="directionBtn">Get Directions
+                </button>
+
+            <!--            Dropdown button starts-->
+            <div class="dropdown">
+                <button class="btn btn-outline-success bg-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select one...
+                </button>
+                <div class="dropdown-menu bg-info">
+                    <button class="dropdown-item" href="#">Occupy</button>
+                    <button class="dropdown-item" href="#">Leave</button>
+                </div>
+
+            </div> <!-- Dropdown button ends -->
+
+        </div> <!-- centering div ends -->
+
+    </div> <!-- jumbotron div ends -->
+
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
 </body>

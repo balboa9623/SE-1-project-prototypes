@@ -2,10 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="newUserStyleSheet.css">
+    <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif" />
+
 </head>
 <body>
 
-<h1>Nothing here. Go away!!!</h1>
+<!--<h1>Nothing here. Go away!!!</h1>-->
+<div class="container">
+    <form class="previousForm" action="loginpage.html">
+        <button class="goBackBtn"> < </button>
+<!--        <button type="button" class="btn btn-primary" id="goBackBtn"> < </button>-->
+    </form>
+    <form class="newUserForm" action="loginpage.html" method="post">
+        <input type="text" class="btn" name="firstName" placeholder="First Name" required>
+        <input type="text" class="btn" name="lastName" placeholder="Last Name" required>
+        <input type="email" class="btn" name="email" placeholder="UCO Email" required>
+        <input type="number" class="btn" name="phoneNumber" placeholder=" Phone Number" max="10" required>
+        <small id="phoneHelp" class="form-text text-muted">Please use numeric values. </small>
+        <input type="text" class="btn" name="licNumber" placeholder="Liscence Number" minlength="6" maxlength="6" required>
+        <small id="licNumHelp" class="form-text text-muted">Please alpha numeric values.</small>
+        <input type="password" class="btn" name="pass" placeholder="Password" required>
+        <input type="password" class="btn" name="confirmPass" placeholder="Confirm Password" required>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+
 </body>
 </html>

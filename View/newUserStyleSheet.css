@@ -1,0 +1,28 @@
+body{
+    background: #036ffc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+.goBackBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #7abaff;
+    border: none;
+    font-size: 25px;
+}
+
+.newUserForm{
+    padding-top:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    position: center;
+    text-align: center;
+    background: #191919;
+    border-radius: 20px;
+}
