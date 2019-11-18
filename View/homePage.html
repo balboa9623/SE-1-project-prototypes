@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Home - UCO Handicapped Parking System</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="homeStyleSheet.css">
     <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif"/>
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
 
+    <!-- Maps API JavaScript code -->
+    <!--    <script type="text/javascript" src="mapsApi.js"></script>-->
 
 </head>
 <body>
-<p>nothing here yet!!!</p>
 
-<div class="container-fluid">
-<!--    jumbotron for holding all the buttons-->
-    <div class="jumbotron bg-transparent">
-<!--    centering all the buttons inside the jumbotron-->
-        <div class="text-center">
+<!--Logout code-->
+<div class="logout_link">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="loginpage.html">
+                Log out
+            </a>
+        </li>
+    </ul>
+</div>
 
-                <button type="button" class="btn btn-outline-success btn-success bg-dark" id="reserveBtn">Reserve</button>
-                <button type="button" class="btn btn-outline-success btn-success bg-dark" id="cancelBtn">Cancel
-                    Reservation
-                </button>
-                <button type="button" class="btn btn-outline-success btn-success bg-dark" id="directionBtn">Get Directions
-                </button>
+<div class="container-fluid jumbotron bg-transparent">
 
-            <!--            Dropdown button starts-->
-            <div class="dropdown">
-                <button class="btn btn-outline-success bg-dark dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select one...
-                </button>
-                <div class="dropdown-menu bg-info">
-                    <button class="dropdown-item" href="#">Occupy</button>
-                    <button class="dropdown-item" href="#">Leave</button>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><u>Update profile</u></h4>
+                    <p class="card-text">To access and update your profile information, click the button below.</p>
+                    <a href="createAccount.html" class="btn btn-dark">Update profile</a>
                 </div>
+            </div>
+        </div>
+    </div>
 
-            </div> <!-- Dropdown button ends -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><u>View Available</u></h5>
+                    <p class="card-text">To view available spaces, click the button below.</p>
+                    <a href="viewAvailable.html" class="btn btn-dark">View available</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </div> <!-- centering div ends -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><u>Show reservation</u></h5>
+                    <p class="card-text">To view your reservation, click the button below.</p>
+                    <a href="showReservation.html" class="btn btn-dark">View available</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </div> <!-- jumbotron div ends -->
-
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><u>Message driver</u></h5>
+                    <p class="card-text">To message a driver who is in your spot, click the button below.</p>
+                    <a href="messageDriver.html" class="btn btn-dark">Message Driver</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 

@@ -9,24 +9,46 @@
 </head>
 <body>
 
-<!--<h1>Nothing here. Go away!!!</h1>-->
-<div class="container">
-    <form class="previousForm" action="loginpage.html">
-        <button class="goBackBtn"> < </button>
-<!--        <button type="button" class="btn btn-primary" id="goBackBtn"> < </button>-->
-    </form>
-    <form class="newUserForm" action="loginpage.html" method="post">
-        <input type="text" class="btn" name="firstName" placeholder="First Name" required>
-        <input type="text" class="btn" name="lastName" placeholder="Last Name" required>
-        <input type="email" class="btn" name="email" placeholder="UCO Email" required>
-        <input type="number" class="btn" name="phoneNumber" placeholder=" Phone Number" max="10" required>
-        <small id="phoneHelp" class="form-text text-muted">Please use numeric values. </small>
-        <input type="text" class="btn" name="licNumber" placeholder="Liscence Number" minlength="6" maxlength="6" required>
-        <small id="licNumHelp" class="form-text text-muted">Please alpha numeric values.</small>
-        <input type="password" class="btn" name="pass" placeholder="Password" required>
-        <input type="password" class="btn" name="confirmPass" placeholder="Confirm Password" required>
 
-        <button type="submit">SUBMIT</button>
+<div class="container">
+    <!--    <form class="previousForm" action="loginpage.html">-->
+    <!--        <button class="goBackBtn"> < </button>-->
+    <!--&lt;!&ndash;        <button type="button" class="btn btn-primary" id="goBackBtn"> < </button>&ndash;&gt;-->
+    <!--    </form>-->
+    <form class="newUserForm" action="loginpage.html" method="post">
+        <div class="container">
+            <div class="form-group">
+                <input type="text" class="btn" name="firstName" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="btn" name="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="btn" name="email" placeholder="UCO Email" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="btn form-control" name="phoneNumber" placeholder="Phone Number" max="10"
+                       required>
+                <small id="phoneHelp" class="form-text text-muted">Please use numeric values. </small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="btn form-control" name="licState" placeholder="Vehicle Registration State"
+                       max="10" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="btn" name="licNumber" placeholder="Vehichle Registration ID" minlength="7"
+                       maxlength="6" required>
+                <small id="licNumHelp" class="form-text text-muted">Please use alpha numeric values.</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="btn" name="pass" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="btn" name="confirmPass" placeholder="Confirm Password" required>
+            </div>
+        </div>
+
+        <button type="submit" class="btn">SUBMIT</button>
     </form>
 </div>
 

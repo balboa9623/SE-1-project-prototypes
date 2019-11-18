@@ -42,9 +42,14 @@
 
 
         <div class="container">
-            <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="UCO Email" required>
-                <small id="emailHelp" class="form-text text-muted">Please enter your full UCO Email address.</small>
+
+            <div class="form-group input-group ">
+                <input type="text" class="form-control" id="inputUsername" aria-describedby="usernameHelp basic-addon2"
+                       placeholder="UCO username" required>
+                <div class="input-group-append">
+                    <span class="input-group-text text-wrap" id="basic-addon2">@uco.edu</span>
+                </div>
+                <!--                <small id="usernameHelp" class="form-text text-muted">Please enter UCO Username.</small>-->
             </div>
             <div class="form-group">
                 <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
