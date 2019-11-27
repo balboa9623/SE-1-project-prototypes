@@ -52,6 +52,61 @@ body{
     border-color: #2ecc71;
 }
 
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.form-group select {
+    font-family: 'Patrick Hand', cursive;
+    display: none;
+}
+
+#regState {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+#regState {
+    width: 320px;
+    border-color: #2ecc71;
+}
+
+#regState {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
 .btn {
     border: 0;
     background: none;
