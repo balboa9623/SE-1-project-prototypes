@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Available Spaces</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="viewAvailable.css">
+    <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif" />
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="lot_details.js"></script>
+
+</head>
+
+<body>
+
+<!--Logout code-->
+<div class="logout_link">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="loginpage.html">
+                Log out
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- logout code ends here-->
+
+
+<div class="container">
+    <div id="dp"></div>
+
+    <div class="card-deck">
+
+        <div class="card" style="width: 18rem; background-color: #FDE74C">
+            <img src="uco campus building.png" class="card-img-top" alt="Image not found" height="270" width="70">
+            <div class="card-body">
+                <h5 class="card-title">Campus Map</h5>
+                <p class="card-text">Click the button below to view campus map</p>
+                <a href="https://www.uco.edu/files/maps/uco-parking-map.pdf" class="btn btn-primary">Campus map</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; background-color: #9BC53D">
+            <img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">
+            <div class="card-body">
+                <h5 class="card-title">Reserve your spot now!</h5>
+                <p class="card-text">To reserve your spot first select desired lot from the dropdown below. Then select a spot from the dropdown beside the first dropdown then click 'Generate spot details' button to view unavailable time. After you have decided your reservation time, enter the start time and end time in the text box below and then click 'Reserve' button to reserve your spot.</p>
+                <!--<form action="useReservation.html" method="get">
+
+                    <p>
+                        <input type="datetime" id="startTime" placeholder="Start time">
+                        <label for="endTime">  </label>
+                        <input type="datetime" id="endTime" placeholder="End time">
+                    </p>
+
+                    <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot" onclick="create_lot_data()">
+
+                    <select name="lot" id="myLotDropdown">
+
+                    </select>
+                </form>-->
+            </div>
+        </div>
+        <br />
+
+        <div class="card" style="width: 18rem; background-color: #E55934">
+            <!--<img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">-->
+            <div class="card-body">
+
+                <form action="useReservation.html" method="get">
+
+                    <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot">
+
+                    <select name="lot" id="myLotDropdown" required>
+                        <!--<option value="-1" selected>..Select Lot..</option>-->
+                    </select>
+
+                    <p></p>
+
+                    <select name="spot" id="mySpotDropdown" required>
+                        <!--<option value="-1" selected>..Select Spot..</option>-->
+
+                    </select>
+                    <p></p>
+
+                    <input type="datetime" id="startTime" placeholder="Start time" required>
+
+
+                    <input type="datetime" id="endTime" placeholder="End time" required>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--<button type="submit" id="generateSpotBtn" >Generate Spot</button>-->
+    <div id="spot-info"></div>
+
+
+</div> <!-- Container-fluid ends -->
+
+<!--<script src="lot_details.js"></script>-->
+
+
+</body>
+
+</html>
